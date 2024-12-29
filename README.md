@@ -2,9 +2,19 @@
 
 # Запуск
 Чтобы запустить test-covarage после клонирования репозитория воспользуйтесь командой:
-<pre> git clone https://github.com/google/googletest.git </pre>
-<pre> bash script </pre>
+<pre> <code> git clone https://github.com/google/googletest.git </code></pre>
+<pre><code> bash script </code></pre>
 
+# Написание своих тестов!
+    Чтобы проверить свои собственные грамматики вы должны ввести команды:
+<pre><code>g++ -std=c++17 main.cpp cpp/*.cpp -o parser</code></pre>
+<pre><code>./parser </code></pre>
+ - Вводите правила грамматики по одному! Пример для ввода `ab` :
+  ```
+     S → aS
+     S → bS
+     S → ε
+     ```
 # Что это такое? 
     Алгоритм Эрли используется для разбора строк с учетом контекстно-свободных грамматик используя текущие состояния такие как:
 - **Правило** грамматики, которое анализируется.
